@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="gxs.com.helpmepick.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:orientation="vertical"
+        android:background="@color/item_back_0_a"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent">
+        <ListView
+            android:layout_margin="8dp"
+            android:id="@+id/lv_listview"
+            android:layout_weight="1"
+            android:divider="#00000000"
+            android:dividerHeight="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+        </ListView>
+        <!--<TextView
+            android:layout_weight="0"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#000"/>-->
+        <LinearLayout
+            android:layout_weight="0"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <Button
+                android:id="@+id/bt_go"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@mipmap/go"
+                />
+            <EditText
+                android:id="@+id/et_input"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:inputType="text"
+                android:maxLines="1"
+                android:hint="请输入"/>
+            <Button
+                android:id="@+id/bt_add"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@mipmap/add"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_text"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_show"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:text="111111"
+            android:textSize="40sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_show"
+            android:gravity="center"
+            >
+            <Button
+                android:id="@+id/bt_re_x"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@mipmap/xie"
+                />
+            <Button
+                android:id="@+id/bt_re_s"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@mipmap/shanchu"
+                />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
